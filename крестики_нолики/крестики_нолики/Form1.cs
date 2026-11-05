@@ -1,0 +1,381 @@
+using System.Windows.Forms;
+
+namespace крестики_нолики
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+        bool zero_turn = true;
+        bool x_turn = false;
+        bool win = false;
+        bool draw = false;
+
+        public bool Win_Cond()
+        {
+            bool row1 = button1.Text == button2.Text && button2.Text == button3.Text   && button1.Text!= "-" && button2.Text != "-" && button3.Text != "-";
+            bool col1 = button1.Text == button4.Text && button4.Text == button7.Text   && button1.Text != "-" && button4.Text != "-" && button7.Text != "-";
+            bool col2 = button2.Text == button5.Text && button5.Text == button8.Text   && button2.Text != "-" && button5.Text != "-" && button8.Text != "-";
+            bool col3 = button3.Text == button6.Text && button6.Text == button9.Text   && button3.Text != "-" && button6.Text != "-" && button9.Text != "-";
+            bool row2 = button4.Text == button5.Text && button5.Text == button6.Text   && button4.Text != "-" && button5.Text != "-" && button6.Text != "-";
+            bool row3 = button7.Text == button8.Text && button8.Text == button9.Text   && button7.Text != "-" && button8.Text != "-" && button9.Text != "-";
+            bool diag1 = button1.Text == button5.Text && button5.Text == button9.Text  && button1.Text != "-" && button5.Text != "-" && button9.Text != "-";
+            bool diag2 = button3.Text == button5.Text && button5.Text == button7.Text  && button3.Text != "-" && button5.Text != "-" && button7.Text != "-";
+
+            return row1 || row2 || row3 || col1 || col2 || col3 || diag1 || diag2;
+        }
+
+        public bool Draw()
+        {
+            if ((((((((((button1.Text != "-") && (button2.Text != "-") && (button3.Text != "-") && (button4.Text != "-")) && (button5.Text != "-") && (button6.Text != "-") && (button7.Text != "-") && (button8.Text != "-") && (button9.Text != "-") && (Win_Cond() == false)))))))))
+            {
+                draw = true;
+            }
+            return draw;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (button1.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button1.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button1.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа кресьтков!");
+                    }
+
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+
+                
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button2.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button2.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (button3.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button3.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button3.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (button4.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button4.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button4.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (button5.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button5.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button5.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (button6.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button6.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button6.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            if (button7.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button7.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button7.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if (button8.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button8.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    button8.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if (button9.Text == "-")
+            {
+                if (zero_turn == true)
+                {
+                    lbl_massage.Text = "Ход Крестиков";
+                    button9.Text = "O";
+                    zero_turn = false;
+                    x_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа ноликов!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+                else if (x_turn == true)
+                {
+                    lbl_massage.Text = "Ход Ноликов";
+                    
+                    button9.Text = "X";
+                    x_turn = false;
+                    zero_turn = true;
+                    if (Win_Cond())
+                    {
+                        MessageBox.Show("Победа крестиков!");
+                    }
+                    else if (Draw())
+                    {
+                        MessageBox.Show("Ничья");
+                    }
+                }
+            }
+        }
+
+    }
+}
