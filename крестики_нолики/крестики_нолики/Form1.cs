@@ -15,14 +15,14 @@ namespace крестики_нолики
 
         public bool Win_Cond()
         {
-            bool row1 = button1.Text == button2.Text && button2.Text == button3.Text   && button1.Text!= "-" && button2.Text != "-" && button3.Text != "-";
-            bool col1 = button1.Text == button4.Text && button4.Text == button7.Text   && button1.Text != "-" && button4.Text != "-" && button7.Text != "-";
-            bool col2 = button2.Text == button5.Text && button5.Text == button8.Text   && button2.Text != "-" && button5.Text != "-" && button8.Text != "-";
-            bool col3 = button3.Text == button6.Text && button6.Text == button9.Text   && button3.Text != "-" && button6.Text != "-" && button9.Text != "-";
-            bool row2 = button4.Text == button5.Text && button5.Text == button6.Text   && button4.Text != "-" && button5.Text != "-" && button6.Text != "-";
-            bool row3 = button7.Text == button8.Text && button8.Text == button9.Text   && button7.Text != "-" && button8.Text != "-" && button9.Text != "-";
-            bool diag1 = button1.Text == button5.Text && button5.Text == button9.Text  && button1.Text != "-" && button5.Text != "-" && button9.Text != "-";
-            bool diag2 = button3.Text == button5.Text && button5.Text == button7.Text  && button3.Text != "-" && button5.Text != "-" && button7.Text != "-";
+            bool row1 = button1.Text == button2.Text && button2.Text == button3.Text && button1.Text != "-" && button2.Text != "-" && button3.Text != "-";
+            bool col1 = button1.Text == button4.Text && button4.Text == button7.Text && button1.Text != "-" && button4.Text != "-" && button7.Text != "-";
+            bool col2 = button2.Text == button5.Text && button5.Text == button8.Text && button2.Text != "-" && button5.Text != "-" && button8.Text != "-";
+            bool col3 = button3.Text == button6.Text && button6.Text == button9.Text && button3.Text != "-" && button6.Text != "-" && button9.Text != "-";
+            bool row2 = button4.Text == button5.Text && button5.Text == button6.Text && button4.Text != "-" && button5.Text != "-" && button6.Text != "-";
+            bool row3 = button7.Text == button8.Text && button8.Text == button9.Text && button7.Text != "-" && button8.Text != "-" && button9.Text != "-";
+            bool diag1 = button1.Text == button5.Text && button5.Text == button9.Text && button1.Text != "-" && button5.Text != "-" && button9.Text != "-";
+            bool diag2 = button3.Text == button5.Text && button5.Text == button7.Text && button3.Text != "-" && button5.Text != "-" && button7.Text != "-";
 
             return row1 || row2 || row3 || col1 || col2 || col3 || diag1 || diag2;
         }
@@ -32,6 +32,9 @@ namespace крестики_нолики
             if ((((((((((button1.Text != "-") && (button2.Text != "-") && (button3.Text != "-") && (button4.Text != "-")) && (button5.Text != "-") && (button6.Text != "-") && (button7.Text != "-") && (button8.Text != "-") && (button9.Text != "-") && (Win_Cond() == false)))))))))
             {
                 draw = true;
+                MessageBox.Show("Ничья");
+                Application.Restart();
+
             }
             return draw;
         }
@@ -49,6 +52,9 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
+
+
                     }
                     else if (Draw())
                     {
@@ -65,6 +71,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа кресьтков!");
+                        Application.Restart();
                     }
 
                     else if (Draw())
@@ -73,7 +80,7 @@ namespace крестики_нолики
                     }
                 }
 
-                
+
             }
 
         }
@@ -91,6 +98,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
 
                     }
                     else if (Draw())
@@ -107,6 +115,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -130,6 +139,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -145,6 +155,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -167,6 +178,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -182,6 +194,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -204,6 +217,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -219,6 +233,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -241,6 +256,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -256,6 +272,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -278,6 +295,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -293,6 +311,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -315,6 +334,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -330,6 +350,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -352,6 +373,7 @@ namespace крестики_нолики
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа ноликов!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -361,13 +383,14 @@ namespace крестики_нолики
                 else if (x_turn == true)
                 {
                     lbl_massage.Text = "Ход Ноликов";
-                    
+
                     button9.Text = "X";
                     x_turn = false;
                     zero_turn = true;
                     if (Win_Cond())
                     {
                         MessageBox.Show("Победа крестиков!");
+                        Application.Restart();
                     }
                     else if (Draw())
                     {
@@ -377,5 +400,14 @@ namespace крестики_нолики
             }
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
