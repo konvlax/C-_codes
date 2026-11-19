@@ -1,0 +1,16 @@
+D:\dota 2\крестики_нолики\крестики_нолики\bin\Debug\net8.0-windows\крестики_нолики.exe
+D:\dota 2\крестики_нолики\крестики_нолики\bin\Debug\net8.0-windows\крестики_нолики.deps.json
+D:\dota 2\крестики_нолики\крестики_нолики\bin\Debug\net8.0-windows\крестики_нолики.runtimeconfig.json
+D:\dota 2\крестики_нолики\крестики_нолики\bin\Debug\net8.0-windows\крестики_нолики.dll
+D:\dota 2\крестики_нолики\крестики_нолики\bin\Debug\net8.0-windows\крестики_нолики.pdb
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.Form1.resources
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.csproj.GenerateResource.cache
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.GeneratedMSBuildEditorConfig.editorconfig
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.AssemblyInfoInputs.cache
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.AssemblyInfo.cs
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.csproj.CoreCompileInputs.cache
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.dll
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\refint\крестики_нолики.dll
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.pdb
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\крестики_нолики.genruntimeconfig.cache
+D:\dota 2\крестики_нолики\крестики_нолики\obj\Debug\net8.0-windows\ref\крестики_нолики.dll
